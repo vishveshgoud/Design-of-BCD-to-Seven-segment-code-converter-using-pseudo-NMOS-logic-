@@ -82,25 +82,25 @@ now in order to implement these functions using the pseudo nmos logic we need to
 These conversions are required in order to reduce one inverter for each function.
 
   
-a=     ~( A’C’ (B + D) (B’ + D’) )	
+a=     ( A’C’ (B + D) (B’ + D’) )'	
 
 
-b=	~(A’B (C + D) (C’ + D’))
+b=	(A’B (C + D) (C’ + D’))'
 	
 	
-c=	~( CD’B )
+c=	( CD’B )'
 	
  
-d=	~( A’ (C’ + D) (B + D) (B + C’ + D’) (B’ + C + D’) )
+d=	( A’ (C’ + D) (B + D) (B + C’ + D’) (B’ + C + D’) )'
 
  
-e=	~( (B +D) (C’ + D) )
+e=	( (B +D) (C’ + D) )'
 
  
-f=	~( A’ (B’ + C) (A + C + D) (B’ + C’ +D) )
+f=	( A’ (B’ + C) (A + C + D) (B’ + C’ +D) )'
 
  
-g=	~( A’ (B’ + C) (C’ + D) (B + C’) )
+g=	( A’ (B’ + C) (C’ + D) (B + C’) )'
 
 
 In this project the IC design is completed up to Schematic and testing by giving appropriate inputs.
@@ -127,7 +127,10 @@ The schematic of the basic inverter used in this project is as shown below.
 
 
 Transistor dimensions table:
+
+
 ![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/4e889b76-38f5-4dd8-b3a5-57fa9356bcb0)
+
 
 INVERTER:
 
@@ -164,5 +167,39 @@ Also, whenever the CKCA’ is logic ‘1’ it will give the complements of the 
 The exor gate is also designed by using pseudo nmos logic, for obtaining the good enough noise margin the W/L ratio of the NMOS transistors are taken 6 times the W/L ratio of the PMOS transistor.
 
 
+The schematic of the basic xor used in this project is as shown below.
+
+
+Transistor dimensions table:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/0ff313c1-7d47-4c41-8b2d-63e9282c01fa)
+
+
+SCHEMATIC XOR GATE:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/3e434193-5fbf-4553-b9fe-b59684486eeb)
+
+
+XOR SYMBOL:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/e2c08c56-a787-4874-9220-ab61b9d67728)
+
+
+Now by making use of these inverters and the pseudo NMOS logic the subcircuit for output a is designed as shown below.
+
+
+Transistor dimensions table:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/b23e87f0-f71f-42c6-9885-eca7448aa162)
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/374b7826-5cff-4943-82a6-3c5ef0a9dbe4)
+
+
+a=     ( A’C’ (B + D) (B’ + D’) )'	
 
 
