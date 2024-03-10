@@ -197,9 +197,54 @@ Transistor dimensions table:
 ![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/b23e87f0-f71f-42c6-9885-eca7448aa162)
 
 
+SCHEMATIC OF SUBCIRCUIT b:
+
+
 ![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/374b7826-5cff-4943-82a6-3c5ef0a9dbe4)
 
 
 a=     ( A’C’ (B + D) (B’ + D’) )'	
+
+
+SCHEMATIC OF SUBCIRCUIT b:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/5cc6b946-fd90-44e7-9324-76ce9ef55afb)
+
+
+b=	(A’B (C + D) (C’ + D’))'
+
+
+SCHEMATIC OF SUBCIRCUIT c:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/897066fa-44aa-4455-aa57-c15fd3a31dfa)
+
+
+c=	( CD’B )'
+
+
+SCHEMATIC OF SUBCIRCUIT d:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/225109b4-7844-4a3b-b255-86bc25bb03bc)
+
+
+d=	( A’ (C’ + D) (B + D) (B + C’ + D’) (B’ + C + D’) )'
+
+
+SCHEMATIC OF SUBCIRCUIT e:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/aceb4e00-60e8-4a38-b9a7-eb10f1227a35)
+
+
+e=	( (B +D) (C’ + D) )'
+
+
+SCHEMATIC OF SUBCIRCUIT f:
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/d60a7bf7-6609-4679-bf99-0a2d6915b8dd)
+
 
 
