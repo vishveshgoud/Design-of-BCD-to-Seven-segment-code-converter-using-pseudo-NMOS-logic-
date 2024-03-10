@@ -111,3 +111,58 @@ Now, the logic circuit is taken as follows
 
 
 ![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/7bb50f71-1829-461c-8068-489c5cee9a08)
+
+
+# SCHEMATIC DESIGN
+Here there are 7 outputs (a, b, c, d, e, f, g) and four inputs (A, B, C, D)
+
+
+Here one subcircuit is used for taking inputs and also the complements of these inputs by making use of inverters.
+
+
+The inverter is designed in such a way that the W/L ratio of the pmos is 2.5 times the W/L ratio of nmos transistor for the purpose of proper switching voltage (0.5 VDD).
+
+
+The schematic of the basic inverter used in this project is as shown below.
+
+
+Transistor dimensions table:
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/4e889b76-38f5-4dd8-b3a5-57fa9356bcb0)
+
+INVERTER:
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/aadf5e49-d874-4342-9f60-7b8a286c1fc4)
+
+
+INVERTER SYMBOL:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/4b90713e-5742-4018-9208-dce6939570a6)
+
+
+Now by making use of these inverters the inputs subcircuit is designed as shown below.
+
+
+INPUTS SUBCIRCUIT:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/e624a198-8a47-446b-b57b-d43b1937e638)
+
+
+Now each of the output an individual subcircuit is designed by using pseudo nmos logic where single pmos is used as pull up network and nmos transistors are used according to the required logic as pull-down network.
+
+
+Here an additional pin CKCA’ is used to select the common cathode (CACK’=0) or common anode (CKCA’=1) operation of the IC. For this purpose xor gates are employed to take the final output. 
+
+
+For these xor gates one of the inputs is CKCA’ and the other input is the output of the subcircuit whenever the CKCA’ is logic ‘0’ it will allow the outputs to pass without any changes and achieving the common cathode mode of operation.
+
+
+Also, whenever the CKCA’ is logic ‘1’ it will give the complements of the outputs of the subcircuit, by this it achieves the common anode mode of operation.
+
+
+The exor gate is also designed by using pseudo nmos logic, for obtaining the good enough noise margin the W/L ratio of the NMOS transistors are taken 6 times the W/L ratio of the PMOS transistor.
+
+
+
+
