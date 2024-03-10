@@ -28,7 +28,8 @@ This seven segment LED display has seven individual LEDs and these displays are 
 In common cathode display all the seven LEDs cathodes are tied together and anodes are individually controlled through the display controller IC to display the required digit.
 Similarly in common anode display all the seven LEDs anodes are tied together and cathodes are individually controlled.
 
-![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/e10f8689-df93-4208-b88d-fe5f4b29e70d)
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/b1a0cec9-5c9e-4496-90b5-cc713f1513b5)
+
 
 In this seven segment LED display along with the seven segments there is another eighth segment for the purpose of representing the decimal point but most of the times it is not used.
 # Logic circuit Design:
@@ -107,3 +108,6 @@ In this project the IC design is completed up to Schematic and testing by giving
 
 
 Now, the logic circuit is taken as follows
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/7bb50f71-1829-461c-8068-489c5cee9a08)
