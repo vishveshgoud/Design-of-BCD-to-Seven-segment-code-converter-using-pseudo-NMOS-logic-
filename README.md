@@ -271,3 +271,35 @@ SYMBOL OF THE BCD TO SEVEN SEGMENT CODE CONVERTER IC:
 ![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/a9ef6ce5-61c7-4830-8110-84a972a28a86)
 
 
+THE TESTBENCH:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/15eef021-19fb-438d-bc6a-fae227123ed7)
+
+
+The circuit treats any greater than 2V as logic ‘1’ and any value less than 300mv as logic ‘0’.
+
+
+The vdd for the circuit is 2.3V.
+
+
+# INPUTS AND OUTPUTS
+
+
+For testing the circuit, the test input is given as by giving CKCA’ as logic ‘0’ to obtain common cathode outputs.
+
+
+	Input						outputs required
+
+
+A	B	C	B		a	b	c	d	e	f	g
+
+
+0	0	1	1		1	1	1	1	0	0	1
+
+
+
+Obtained output waveforms:
+
+
+![image](https://github.com/vishveshgoud/Design-of-BCD-to-Seven-segment-code-converter-using-pseudo-NMOS-logic-/assets/147975068/4678d2c5-440a-44b4-877c-044ed17d7dcc)
