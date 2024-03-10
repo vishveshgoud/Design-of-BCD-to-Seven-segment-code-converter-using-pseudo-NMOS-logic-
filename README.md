@@ -289,13 +289,13 @@ The vdd for the circuit is 2.3V.
 For testing the circuit, the test input is given as by giving CKCA’ as logic ‘0’ to obtain common cathode outputs.
 
 
-	Input						outputs required
+		Input							outputs required
 
 
-A	B	C	B		a	b	c	d	e	f	g
+	A	B	C	B				 a	b	c	d	e	f	g
 
 
-0	0	1	1		1	1	1	1	0	0	1
+	0	0	1	1				1	1	1	1	0	0	1
 
 
 
